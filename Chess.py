@@ -37,15 +37,6 @@ def king_moves (loc, colour):
 
 # In[2]:
 
-
-# Making the board
-columns = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
-rows = ['1', '2', '3', '4', '5', '6', '7', '8']
-board = []
-for r in rows:
-    grid = [str (c) + str (r) for c in columns]           # Defining the grid
-    board.append (grid)                                # Adding the grids to board
-    
 # Finding possible moves of the Bishop
 def bishop_moves (loc, colour):
     c = list (loc) [0]          
@@ -71,15 +62,6 @@ def bishop_moves (loc, colour):
 
 
 # In[3]:
-
-
-# Making the board
-columns = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
-rows = ['1', '2', '3', '4', '5', '6', '7', '8']
-board = []
-for r in rows:
-    grid = [str (c) + str (r) for c in columns]          # Defining the grid
-    board.append (grid)                                # Adding the grids to board
     
 # Finding possible moves of the Rook
 def rook_moves (loc, colour):
@@ -107,16 +89,6 @@ def rook_moves (loc, colour):
 
 # In[4]:
 
-
-# Making the board
-columns = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
-rows = ['1', '2', '3', '4', '5', '6', '7', '8']
-board = []
-for r in rows:
-    grid = [str (c) + str (r) for c in columns]           # Defining the grid
-    board.append (grid)                                # Adding the grids to board
-    
-    
 # Finding possible moves of the Queen
 def queen_moves (loc, colour):
     c = list (loc) [0]          
@@ -149,15 +121,6 @@ def queen_moves (loc, colour):
 
 
 # In[5]:
-
-
-# Making the board
-columns = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
-rows = ['1', '2', '3', '4', '5', '6', '7', '8']
-board = []
-for r in rows:
-    grid = [str (c) + str (r) for c in columns]           # Defining the grid
-    board.append (grid)                                # Adding the grids to board
     
 # Finding possible moves of the Knight
 def knight_moves (loc, colour):
@@ -191,15 +154,6 @@ def knight_moves (loc, colour):
 
 # In[6]:
 
-
-# Making the board
-columns = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
-rows = ['1', '2', '3', '4', '5', '6', '7', '8']
-board = []
-for r in rows:
-    grid = [str (c) + str (r) for c in columns]        # Defining the grid
-    board.append (grid)                                # Adding the grids to board
-    
 # Finding possible moves of the Pawn
 def pawn_moves (loc, colour):
     c = list (loc) [0]          
@@ -543,9 +497,6 @@ for i in range (len (moves_list_f)):
                         else:
                             if moves_list_f [j].count (k) > 0:
                                 print ("Possible coup of %s by %s at position %s" % (col_list [i], pieces_list  [i], col_list [j], pieces_list [j], k))                                        
-
-
-# In[ ]:
 
 
 
